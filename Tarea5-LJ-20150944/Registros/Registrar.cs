@@ -23,15 +23,15 @@ namespace Tarea5_LJ_20150944.Registros
         {
             
             
-            if(txtNombre.Text == String.Empty)
+            if(txtNombre.Text == String.Empty || txtBalance.Text == String.Empty || txtMonto.Text == String.Empty || txtObservaciones.Text == String.Empty)
             {
-                errorProvider1.SetError(txtNombre, "MMG");
+                errorProvider1.SetError(txtNombre, "No puede dejar nada vacio");
             }
             else
             {
                 Estudiantes estudiante = LlenaClase();
                 if (EstudiantesBLL.Guardar(estudiante))
-                    MessageBox.Show("Guardooooooo!!!!!");
+                    MessageBox.Show("Acaba de Guardar un nuevo Estudiante");
             }
            
         }
