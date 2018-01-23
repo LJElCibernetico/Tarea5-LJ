@@ -114,6 +114,7 @@
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.dgvMostrar);
             this.Name = "Consultar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consultar";
             ((System.ComponentModel.ISupportInitialize)(this.dgvMostrar)).EndInit();
             this.ResumeLayout(false);

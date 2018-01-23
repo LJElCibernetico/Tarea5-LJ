@@ -84,6 +84,7 @@
             this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.btnRegistrar);
             this.Name = "Inscripciones";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inscripciones";
             this.ResumeLayout(false);
             this.PerformLayout();
