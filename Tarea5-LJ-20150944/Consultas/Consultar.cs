@@ -39,7 +39,6 @@ namespace Tarea5_LJ_20150944.Consultas
 
             if (cbFiltrar.SelectedIndex == 2)
             {
-                //ponerlo en una funcion
                 String s = txtCriterio.Text;
                 
                 dgvMostrar.DataSource = EstudiantesBLL.GetList(es => es.Nombre == s);
@@ -47,7 +46,6 @@ namespace Tarea5_LJ_20150944.Consultas
 
             if (cbFiltrar.SelectedIndex == 3)
             {
-                //ponerlo en una funcion
                 int monto = 0;
                 int.TryParse(txtCriterio.Text, out monto);
 
@@ -56,7 +54,6 @@ namespace Tarea5_LJ_20150944.Consultas
 
             if (cbFiltrar.SelectedIndex == 4)
             {
-                //ponerlo en una funcion
                 int balance = 0;
                 int.TryParse(txtCriterio.Text, out balance);
 
@@ -65,7 +62,6 @@ namespace Tarea5_LJ_20150944.Consultas
 
             if (cbFiltrar.SelectedIndex == 5)
             {
-                //ponerlo en una funcion
                 String s = txtCriterio.Text;
 
                 dgvMostrar.DataSource = EstudiantesBLL.GetList(es => es.Observaciones == s);
